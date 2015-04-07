@@ -1,0 +1,12 @@
+function [jval,gradient] = costFunction(theta)
+jval = cost(theta) #compute the cost function over all the m training examples.
+gradient = zeros(2,1) 
+gradient(1) = # function to calculate the partial derivative of the theta1
+
+
+
+Things required to be done:
+1. Implement file handling to take in the data from a training example into a vector.
+2. Implement a cost function which calculates the value of the cost function taking in all the 
+training examples.
+3. Implement a function taking partial derivative wrt theta(j)
