@@ -1,4 +1,5 @@
-function [c,z] = costExample(theta,X)
-z = theta' * X
-c = 1 / (1 - 2.178 ^ z);
- 
+function c = costExample(theta,X,data)
+c = -(data * log(Hypothesis(theta,X)) + (1 - data) * log(1 - Hypothesis(theta,X))); 
+if(isnan(c)),
+c = 0;
+end; 
